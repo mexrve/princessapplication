@@ -3,8 +3,11 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:princessapp/random_fact.dart';
+import 'package:princessapp/water_tracker.dart';
 
-import 'package:prencess_app/EgzersizTakvimi.dart';
+
+import 'EgzersizTakvimi.dart';
+import 'my_pedometer.dart';
 
 void main() {
   runApp(MyApp());
@@ -116,6 +119,24 @@ class CategoriesPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => EgzersizTakvimi()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Prenses bugün kaç bardak su içti'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => WaterTracker()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Prenses bugün kaç adım attı'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MyPedometer()),
               );
             },
           ),
