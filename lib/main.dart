@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:princessapp/random_fact.dart';
 
+import 'package:prencess_app/EgzersizTakvimi.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -105,6 +107,15 @@ class CategoriesPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => RandomFactPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Prensesler için egzersiz takvimi'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => EgzersizTakvimi()),
               );
             },
           ),
