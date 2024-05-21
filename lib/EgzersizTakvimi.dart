@@ -60,6 +60,7 @@ class _EgzersizTakvimiState extends State<EgzersizTakvimi> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Egzersiz Takvimi'),
+        backgroundColor: Colors.pinkAccent,
       ),
       body: Column(
         children: [
