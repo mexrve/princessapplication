@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 // ignore: unused_import
-import 'package:princessapp/random_fact.dart';
-import 'package:princessapp/water_tracker.dart';
+import 'random_fact.dart';
+import 'water_tracker.dart';
 import 'EgzersizTakvimi.dart';
 import 'my_pedometer.dart';
 
@@ -305,9 +305,9 @@ class CocktailGuidePage extends StatelessWidget {
       "strAlcoholic": "Alkollü",
       "strGlass": "Kokteyl bardağı",
       "strInstructions":
-          "Bardağın kenarına limon dilimi sürüp tuz yapışmasını sağlayın. Dış kenarını nemlendirin ve tuzu üzerine serpiştirin. Tuz, içen kişinin dudaklarına değmeli ve asla kokteyle karışmamalıdır. Diğer malzemeleri buz ile çalkalayın ve dikkatlice bardağa dökün.",
+      "Bardağın kenarına limon dilimi sürüp tuz yapışmasını sağlayın. Dış kenarını nemlendirin ve tuzu üzerine serpiştirin. Tuz, içen kişinin dudaklarına değmeli ve asla kokteyle karışmamalıdır. Diğer malzemeleri buz ile çalkalayın ve dikkatlice bardağa dökün.",
       "strDrinkThumb":
-          "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
+      "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
       "strIngredient1": "Tekila",
       "strIngredient2": "Triple sec",
       "strIngredient3": "Lime suyu",
@@ -323,9 +323,9 @@ class CocktailGuidePage extends StatelessWidget {
       "strAlcoholic": "Alkollü",
       "strGlass": "Kokteyl bardağı",
       "strInstructions":
-          "Bardağın kenarına lime suyu sürün. Kenarını iri tuza batırın. Tekila, blue curacao ve lime suyunu buz ile çalkalayın, tuzla kaplanmış bardağa süzün ve servis yapın.",
+      "Bardağın kenarına lime suyu sürün. Kenarını iri tuza batırın. Tekila, blue curacao ve lime suyunu buz ile çalkalayın, tuzla kaplanmış bardağa süzün ve servis yapın.",
       "strDrinkThumb":
-          "https://www.thecocktaildb.com/images/media/drink/bry4qh1582751040.jpg",
+      "https://www.thecocktaildb.com/images/media/drink/bry4qh1582751040.jpg",
       "strIngredient1": "Tekila",
       "strIngredient2": "Blue Curacao",
       "strIngredient3": "Lime suyu",
@@ -343,7 +343,7 @@ class CocktailGuidePage extends StatelessWidget {
       "strGlass": "Eski Moda Bardak",
       "strInstructions": "Çalkalayın ve soğutulmuş kokteyl bardağına süzün.",
       "strDrinkThumb":
-          "https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg",
+      "https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg",
       "strIngredient1": "Tekila",
       "strIngredient2": "Lime Suyu",
       "strIngredient3": "Agave şurubu",
@@ -358,9 +358,9 @@ class CocktailGuidePage extends StatelessWidget {
       "strAlcoholic": "Alkollü",
       "strGlass": "Margarita/Kupet bardağı",
       "strInstructions":
-          "Tüm malzemeleri blenderda karıştırın ve pürüzsüz hale gelene kadar karıştırın. Bu, bir içki yapar.",
+      "Tüm malzemeleri blenderda karıştırın ve pürüzsüz hale gelene kadar karıştırın. Bu, bir içki yapar.",
       "strDrinkThumb":
-          "https://www.thecocktaildb.com/images/media/drink/srpxxp1441209622.jpg",
+      "https://www.thecocktaildb.com/images/media/drink/srpxxp1441209622.jpg",
       "strIngredient1": "Buz",
       "strIngredient2": "Tekila",
       "strIngredient3": "Hindistancevizi kreması",
@@ -377,9 +377,9 @@ class CocktailGuidePage extends StatelessWidget {
       "strAlcoholic": "Alkollü",
       "strGlass": "Kokteyl bardağı",
       "strInstructions":
-          "Kokteyl bardağının kenarına limon suyu sürün ve tuza batırın. Şnaps, tekila, triple sec, limon suyu ve çilekleri buz ile çalkalayın, tuzlu bardağa süzün ve servis yapın.",
+      "Kokteyl bardağının kenarına limon suyu sürün ve tuza batırın. Şnaps, tekila, triple sec, limon suyu ve çilekleri buz ile çalkalayın, tuzlu bardağa süzün ve servis yapın.",
       "strDrinkThumb":
-          "https://www.thecocktaildb.com/images/media/drink/tqyrpw1439905311.jpg",
+      "https://www.thecocktaildb.com/images/media/drink/tqyrpw1439905311.jpg",
       "strIngredient1": "Çilek şnapsı",
       "strIngredient2": "Tekila",
       "strIngredient3": "Triple sec",
@@ -399,9 +399,9 @@ class CocktailGuidePage extends StatelessWidget {
       "strAlcoholic": "Alkollü",
       "strGlass": "Collins bardağı",
       "strInstructions":
-          "Bir mason kavanozda karpuz ve 5 nane yaprağını püre haline getirin ve süzün. Daha sonra greyfurt suyu, yarım lime suyu ve tekilayı buz ile ekleyin. Kavanoza kapak koyup çalkalayın. Bardağa dökün ve daha fazla buz ekleyin. Taze nane ve küçük bir dilim karpuz ile süsleyin.",
+      "Bir mason kavanozda karpuz ve 5 nane yaprağını püre haline getirin ve süzün. Daha sonra greyfurt suyu, yarım lime suyu ve tekilayı buz ile ekleyin. Kavanoza kapak koyup çalkalayın. Bardağa dökün ve daha fazla buz ekleyin. Taze nane ve küçük bir dilim karpuz ile süsleyin.",
       "strDrinkThumb":
-          "https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg",
+      "https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg",
       "strIngredient1": "Karpuz",
       "strIngredient2": "Nane",
       "strIngredient3": "Greyfurt Suyu",
@@ -426,6 +426,7 @@ class CocktailGuidePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Prensesler için kokteyl rehberi!'),
+        backgroundColor: Colors.pinkAccent,
       ),
       body: ListView.builder(
         itemCount: drinks.length,
@@ -465,7 +466,7 @@ class CocktailGuidePage extends StatelessWidget {
                         buildIngredientText(
                             drink['strMeasure7'],
                             drink[
-                                'strIngredient7']), // Ekledim, çünkü bazı içeceklerde 7 malzeme var
+                            'strIngredient7']), // Ekledim, çünkü bazı içeceklerde 7 malzeme var
                         const SizedBox(height: 10),
                         const Text('Talimatlar:'),
                         Text(drink['strInstructions']),
