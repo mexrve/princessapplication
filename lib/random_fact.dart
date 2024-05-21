@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class RandomFactPage extends StatefulWidget {
@@ -37,6 +39,7 @@ class _RandomFactPageState extends State<RandomFactPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Rastgele Bilgi'),
+        backgroundColor: Colors.pinkAccent,
       ),
       body: Center(
         child: Padding(
@@ -55,3 +58,4 @@ class _RandomFactPageState extends State<RandomFactPage> {
     );
   }
 }
+
