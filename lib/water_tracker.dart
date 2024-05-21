@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'main.dart';
+
 class WaterTracker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -41,6 +43,12 @@ class _WaterTrackerPageState extends State<WaterTrackerPage> {
       appBar: AppBar(
         title: Text('Prenses bugün kaç bardak su içti'),
         backgroundColor: Colors.pinkAccent,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => CategoriesPage()));
+          },
+        ),
       ),
       body: Center(
         child: Column(
