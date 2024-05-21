@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:princessapp/random_fact.dart';
 import 'package:princessapp/water_tracker.dart';
-
-
 import 'EgzersizTakvimi.dart';
 import 'my_pedometer.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,12 +22,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,17 +48,18 @@ class HomePage extends StatelessWidget {
                     color: Colors.pink[900]),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 239, 147, 178)),
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => CategoriesPage()),
+                    MaterialPageRoute(
+                        builder: (context) => const CategoriesPage()),
                   );
                 },
-                child: Text('Mükemmelim, hadi başlayalım!'),
+                child: const Text('Mükemmelim, hadi başlayalım!'),
               ),
             ],
           ),
@@ -67,36 +70,40 @@ class HomePage extends StatelessWidget {
 }
 
 class CategoriesPage extends StatelessWidget {
+  const CategoriesPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.pink[50],
       appBar: AppBar(
-        title: Text('Kategoriler'),
+        title: const Text('Kategoriler'),
         backgroundColor: Colors.pink,
       ),
       body: ListView(
         children: [
           ListTile(
-            title: Text('Güzellik Zikirmatiği'),
+            title: const Text('Güzellik Zikirmatiği'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => BeautyCounterPage()),
+                MaterialPageRoute(
+                    builder: (context) => const BeautyCounterPage()),
               );
             },
           ),
           ListTile(
-            title: Text('Prenses Günlüğü'),
+            title: const Text('Prenses Günlüğü'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => PrincessDiaryPage()),
+                MaterialPageRoute(
+                    builder: (context) => const PrincessDiaryPage()),
               );
             },
           ),
           ListTile(
-            title: Text('Prensesler için kokteyl rehberi!'),
+            title: const Text('Prensesler için kokteyl rehberi!'),
             onTap: () {
               Navigator.push(
                 context,
@@ -105,7 +112,7 @@ class CategoriesPage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Rastgele Bilgi'),
+            title: const Text('Rastgele Bilgi'),
             onTap: () {
               Navigator.push(
                 context,
@@ -114,7 +121,7 @@ class CategoriesPage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Prensesler için egzersiz takvimi'),
+            title: const Text('Prensesler için egzersiz takvimi!'),
             onTap: () {
               Navigator.push(
                 context,
@@ -123,7 +130,7 @@ class CategoriesPage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Prenses bugün kaç bardak su içti'),
+            title: const Text('Prenses bugün kaç bardak su içti?'),
             onTap: () {
               Navigator.push(
                 context,
@@ -132,7 +139,7 @@ class CategoriesPage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Prenses bugün kaç adım attı'),
+            title: const Text('Prenses bugün kaç adım attı?'),
             onTap: () {
               Navigator.push(
                 context,
@@ -148,7 +155,10 @@ class CategoriesPage extends StatelessWidget {
 
 // buradan itibaren GÜZELLİK SAYACI
 class BeautyCounterPage extends StatefulWidget {
+  const BeautyCounterPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _BeautyCounterPageState createState() => _BeautyCounterPageState();
 }
 
@@ -160,7 +170,7 @@ class _BeautyCounterPageState extends State<BeautyCounterPage> {
     return Scaffold(
       backgroundColor: Colors.pink[50],
       appBar: AppBar(
-        title: Text('Güzellik Zikirmatiği'),
+        title: const Text('Güzellik Zikirmatiği'),
         backgroundColor: Colors.pink,
       ),
       body: Center(
@@ -172,7 +182,7 @@ class _BeautyCounterPageState extends State<BeautyCounterPage> {
               style: TextStyle(fontSize: 20, color: Colors.pink[900]),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.pink),
               onPressed: () {
@@ -180,9 +190,9 @@ class _BeautyCounterPageState extends State<BeautyCounterPage> {
                   beautyCount++;
                 });
               },
-              child: Text('Tıkla!'),
+              child: const Text('Tıkla!'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               'Güzel ve bilge bir prenses olduğumu onaylıyorum!',
               style: TextStyle(fontSize: 18, color: Colors.pink[700]),
@@ -196,7 +206,10 @@ class _BeautyCounterPageState extends State<BeautyCounterPage> {
 }
 
 class PrincessDiaryPage extends StatefulWidget {
+  const PrincessDiaryPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _PrincessDiaryPageState createState() => _PrincessDiaryPageState();
 }
 
@@ -228,7 +241,7 @@ class _PrincessDiaryPageState extends State<PrincessDiaryPage> {
     return Scaffold(
       backgroundColor: Colors.pink[50],
       appBar: AppBar(
-        title: Text('Prenses Günlüğü'),
+        title: const Text('Prenses Günlüğü'),
         backgroundColor: Colors.pink,
       ),
       body: Column(
@@ -237,7 +250,7 @@ class _PrincessDiaryPageState extends State<PrincessDiaryPage> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _titleController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Başlık',
                 border: OutlineInputBorder(),
               ),
@@ -247,7 +260,7 @@ class _PrincessDiaryPageState extends State<PrincessDiaryPage> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _contentController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Not',
                 border: OutlineInputBorder(),
               ),
@@ -256,7 +269,7 @@ class _PrincessDiaryPageState extends State<PrincessDiaryPage> {
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.pink),
             onPressed: _addNote,
-            child: Text('Not Ekle'),
+            child: const Text('Not Ekle'),
           ),
           Expanded(
             child: ListView.builder(
@@ -268,7 +281,7 @@ class _PrincessDiaryPageState extends State<PrincessDiaryPage> {
                     title: Text(notes[index]['title']!),
                     subtitle: Text(notes[index]['content']!),
                     trailing: IconButton(
-                      icon: Icon(Icons.delete, color: Colors.pink),
+                      icon: const Icon(Icons.delete, color: Colors.pink),
                       onPressed: () => _deleteNote(index),
                     ),
                   ),
@@ -406,11 +419,13 @@ class CocktailGuidePage extends StatelessWidget {
     }
   ];
 
+  CocktailGuidePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Prensesler için kokteyl rehberi!'),
+        title: const Text('Prensesler için kokteyl rehberi!'),
       ),
       body: ListView.builder(
         itemCount: drinks.length,
@@ -433,8 +448,8 @@ class CocktailGuidePage extends StatelessWidget {
                         Text('Kategori: ${drink['strCategory']}'),
                         Text('Bardak: ${drink['strGlass']}'),
                         Text('Alkol Durumu: ${drink['strAlcoholic']}'),
-                        SizedBox(height: 10),
-                        Text('Malzemeler:'),
+                        const SizedBox(height: 10),
+                        const Text('Malzemeler:'),
                         buildIngredientText(
                             drink['strMeasure1'], drink['strIngredient1']),
                         buildIngredientText(
@@ -451,8 +466,8 @@ class CocktailGuidePage extends StatelessWidget {
                             drink['strMeasure7'],
                             drink[
                                 'strIngredient7']), // Ekledim, çünkü bazı içeceklerde 7 malzeme var
-                        SizedBox(height: 10),
-                        Text('Talimatlar:'),
+                        const SizedBox(height: 10),
+                        const Text('Talimatlar:'),
                         Text(drink['strInstructions']),
                       ],
                     ),
@@ -461,7 +476,7 @@ class CocktailGuidePage extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        child: Text('Kapat'),
+                        child: const Text('Kapat'),
                       ),
                     ],
                   );
@@ -481,6 +496,6 @@ class CocktailGuidePage extends StatelessWidget {
         ingredient.trim().isNotEmpty) {
       return Text('$measure $ingredient');
     }
-    return SizedBox.shrink(); // Boş malzemeleri göstermemek için
+    return const SizedBox.shrink(); // Boş malzemeleri göstermemek için
   }
 }

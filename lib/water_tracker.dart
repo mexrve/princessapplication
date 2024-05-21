@@ -4,6 +4,7 @@ class WaterTracker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Su Takip Uygulaması',
       theme: ThemeData(
         primarySwatch: Colors.pink,
@@ -20,17 +21,17 @@ class WaterTrackerPage extends StatefulWidget {
 }
 
 class _WaterTrackerPageState extends State<WaterTrackerPage> {
-  int _waterCount = 0;  // Kullanıcının içtiği su miktarını tutacak değişken
+  int _waterCount = 0; // Kullanıcının içtiği su miktarını tutacak değişken
 
   void _incrementWater() {
     setState(() {
-      _waterCount++;  // Su sayısını bir artırır
+      _waterCount++; // Su sayısını bir artırır
     });
   }
 
   void _resetWater() {
     setState(() {
-      _waterCount = 0;  // Su sayısını sıfırlar
+      _waterCount = 0; // Su sayısını sıfırlar
     });
   }
 
@@ -52,7 +53,10 @@ class _WaterTrackerPageState extends State<WaterTrackerPage> {
             ),
             Text(
               '$_waterCount bardak',
-              style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold, color: Colors.pink[900]),
+              style: TextStyle(
+                  fontSize: 48,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.pink[900]),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 24.0),

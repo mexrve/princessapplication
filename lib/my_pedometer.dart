@@ -6,6 +6,7 @@ class MyPedometer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Prenses Adım Sayar',
       theme: ThemeData(
         primarySwatch: Colors.pink,
@@ -33,12 +34,14 @@ class _StepCounterPageState extends State<StepCounterPage> {
 
   void initPlatformState() {
     // Subscribe to step count stream and handle step count updates
-    _subscription = Pedometer.stepCountStream.handleError(onStepCountError).listen(onStepCount);
+    _subscription = Pedometer.stepCountStream
+        .handleError(onStepCountError)
+        .listen(onStepCount);
   }
 
   void onStepCount(StepCount event) {
     setState(() {
-      _stepCount = event.steps;  // Update step count from StepCount object
+      _stepCount = event.steps; // Update step count from StepCount object
     });
   }
 
@@ -65,7 +68,10 @@ class _StepCounterPageState extends State<StepCounterPage> {
             ),
             Text(
               '$_stepCount adım',
-              style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold, color: Colors.pink[900]),
+              style: TextStyle(
+                  fontSize: 48,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.pink[900]),
             ),
             SizedBox(height: 24),
           ],
