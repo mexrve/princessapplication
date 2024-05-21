@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pedometer/pedometer.dart';
 import 'dart:async';
 
-import 'package:prencess_app/main.dart';
+import 'main.dart';
 
 class MyPedometer extends StatelessWidget {
   @override
