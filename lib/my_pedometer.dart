@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:pedometer/pedometer.dart';
 import 'dart:async';
 
+import 'package:prencess_app/main.dart';
+
 class MyPedometer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -55,6 +57,12 @@ class _StepCounterPageState extends State<StepCounterPage> {
       appBar: AppBar(
         title: Text('Prenses Adım Sayar'),
         backgroundColor: Colors.pink[800],
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => CategoriesPage()));
+          },
+        ),
       ),
       body: Center(
         child: Column(
